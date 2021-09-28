@@ -1,0 +1,130 @@
+class Numbers {
+	public static void main(String[] args) {
+		int rows = 10;
+		for (int i = 1; i <= rows; ++i) {
+			for (int j = 1; j <= i; ++j) {
+                // print displays the text without adding a new line
+				System.out.print(j + " "); 
+			}
+			System.out.println(""); // println displays the text along with a new line
+		}
+	}
+}
+
+*/
+class Tester {
+	public static void main(String[] args) {
+		int num = 6;
+		int fact = 1;
+		if(num == 0){
+		    fact = 1;
+		}
+			while (num >0) {
+		    fact = fact*num;
+		    num--;
+			}
+		System.out.print("factorial of num is" +  fact);
+	}
+
+
+}
+class Tester {
+	public static void main(String[] args) {
+		int num = 6;
+		int fact = 1;
+		if(num == 0){
+		    fact = 1;
+		}
+			while (num >0) {
+		    fact = fact*num;
+		    num--;
+			}
+		System.out.print("factorial of num is" +  fact);
+	}
+
+
+}
+
+class Tester {
+	public static void main(String[] args) {
+       int num = 5;
+       int temp = 1;
+       System.out.print(temp);
+       
+       for(int i=1;i<num;i++){
+          temp = temp*2;
+          System.out.print(", "+temp);
+               
+           
+           
+       }
+	}
+}
+
+
+lass Tester {
+	public static void main(String[] args) {
+		double a =1;
+		double b =4;
+		double c =4;
+		double desc = b*b-4*a*c;
+		if(desc > 0){
+		    double root1 = (-b+desc)/2*a;
+		    double root2 = (-b-desc)/2*a;
+		    System.out.print(root1);
+		     System.out.print(root2);
+		    
+		}
+		else if (desc==0){
+		    System.out.print((-b/2*a));
+		}
+		else{
+		    System.out.print("equation has no roots");
+		}
+	}
+}
+
+
+class Company {
+    public void defaultMethod(String inStr){ //formal parameter
+        if(inStr.equals("A")){
+            inStr="B";
+        }
+    }
+}
+class Tester{
+    public static void main(String[] args){
+        Company company1=new Company();
+        String inStr="A";
+        System.out.println(inStr);
+        company1.defaultMethod(inStr); //actual parameter
+        System.out.println(inStr);
+    }
+}
+op: A
+    A
+
+class Company {
+    public static long contactNumber;
+    public static void passByReferenceMethod(Company company1){ //formal parameter
+        Company.contactNumber=45792L;
+    }
+    public void passByValueMethod(String inStr){ //formal param //copy of inStr
+        if(inStr.equals("A")){
+            inStr="B";
+        }
+    }
+}
+class Tester{
+    public static void main(String[] args){
+        Company company1=new Company();
+        company1.contactNumber=89321L;
+        System.out.println(company1.contactNumber);
+        company1.passByReferenceMethod(company1);
+        System.out.println(company1.contactNumber);
+        String inStr="A";
+        System.out.println(inStr);
+        company1.passByValueMethod(inStr); //actual param
+        System.out.println(inStr);
+    }
+}

@@ -1,0 +1,4 @@
+mvn --version -- command is used 
+mvn package -- command is used to build the file .
+mvn clean install
+mvn clean package

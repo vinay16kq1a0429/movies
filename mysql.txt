@@ -1,0 +1,73 @@
+information is wealth
+data - web appln, mobile appln, AI, ML, DS, DBA
+database:
+    relational (MySQL, Oracle, MSSQL, PostgrSQL) 
+    no-sql (MongoDB, Cassandra, Couchbase, Redis, Neo4j)
+    
+Create Read Update Delete (DML commands)
+    DDL, DML, 
+    DCL, TCL
+    Stored Routines (Procedures, Functions, Triggers) - Exception Handling
+    
+FA2: 
+    MySQL
+    Web Designing (1 day each)
+    assessment
+    
+Features:
+    Relational DBMS
+    Open Source 
+    Transactions -> payment (D/C) scenario , order Book,avail
+    ACID 
+    Cross Platform 
+    High availability - replication (SPOF)
+    Veritical scalability - increase the resource
+    Partition
+    Security - grant, revoke
+arjit - d1, d2, t1, t2, select, delete, grant, show
+databases - table, index, views, proc, fucn, trigg, meta
+mysql -uT<emp_no> -p#Infy123 os_T<emp_no> -A 
+CREATE DATABASE dbname;  
+USE dbname; swicth to the database
+SELECT database(); current database
+SHOW DATABASES; displays all the databases
+CREATE [TEMPORARY] TABLE [IF NOT EX
+from Sankavi Boopathy (internal) to everyone:    12:54 PM
+CREATE [TEMPORARY] TABLE [IF NOT EXISTS] tblname (
+    colname datatype constraint,
+    colname datatype,
+    colname datatype,
+    colname datatype,
+    constraint (columns)
+)
+[TABLE OPTIONS]
+[PARTITION OPTIONS];
+TEMPORARY -> exist for only the current session (login)
+DATATYPES:
+    int, integer, smallint, mediumint, bigint, tinyint
+    decimal(p,s), float,    
+    char, varchar, text, mediumtext, longtext
+    date, timestamp,
+    blob, mediumblob, longblob,
+    enum - set of values
+DESCRIBE/DESC tblname;
+SHOW TABLES; displays all the tables in the current database
+SHOW WARNINGS;
+CONSTRAINTS:
+    NOT NULL - only col
+    UNIQUE - col, tbl
+    PRIMARY KEY - tbl, col
+    FOREIGN KEY - only tbl
+    CHECK - tbl, col
+    
+    DEFAULT <>
+    
+    
+create table demo (id int primary key);    
+create table demo1 (id int, primary key(id));
+create table demo2 (id int, constraint de_if_pk primary key(id));    
+    
+DROP TABLE [IF EXISTS] tbl_name;
+DROP TABLE booking;
+create table booking ( 
+    bid int primary key AUTO_INCRE
